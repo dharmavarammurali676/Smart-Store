@@ -1,0 +1,29 @@
+
+<div style="color:rgb(238, 47, 158);margin:5px 0px 5px 5px;" data-sly-test="${wcmmode.edit}">
+    <b><u>Dropdown Component in Validation</u></b>
+</div>
+
+<div data-sly-use.EE="com.sutrix.demo.core.dropdown.DropDownModelForEE">
+
+    <div style="color:rgb(60, 14, 228);margin:5px 0px 5px 5px;" data-sly-test="${wcmmode.edit}">
+        <i>AddEmail's</i>
+    </div>
+    <sly data-sly-list.item="${EE.addEmails}">
+        <h4>${item.addemails @ context='html'}</h4>
+    </sly>
+
+    
+    <div style="color:rgb(26, 40, 230);margin:5px 0px 5px 5px;" data-sly-test="${wcmmode.edit}">
+        <i>EmployeeDetail's</i>
+    </div>
+    <sly data-sly-list.item1="${EE.employeeDetails}">
+
+        <h4>${item1.employeeid @ context='html'}</h4>
+        <div>${item1.employeename @ context='html'}</div>
+        <div>${item1.mobileno @ context='html'}</div>
+    </sly>
+</div>
+
+
+
+

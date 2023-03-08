@@ -1,0 +1,27 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories = 'headnavpage'}"/>
+
+<div data-sly-use.nav="com.sutrix.demo.core.models.navimage.NavImage"></div>
+<body>
+<header>
+    <img src="${nav.Image}" max-width="100%" max-height="100%" width="200" height="70">
+    <input type="checkbox" id="nav-toggler" class="nav-toggler" />
+    <label for="nav-toggler" class="nav-toggler-label">
+        <i class="fas fa-bars fa-2x burger"></i>
+    </label>
+    <nav>
+        <div id="underline"></div>
+
+        <ul class="navbar">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+

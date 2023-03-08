@@ -1,0 +1,17 @@
+<head data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<meta charset="utf-8">
+<title>${currentPage.title || currentPage.name}</title>
+<meta name="description" content="${properties.jcr:description}">
+<meta name="keywords" content="${head.keywords}">
+<meta name="robots" content="index, follow">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+<link rel="shortcut icon" href="images/qta-fav-icon.ico" type="image/x-icon" sizes="16x16">
+
+<!--/* Include the site client libraries (loading only the CSS in the header, JS will be loaded in the footer) */-->
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" data-sly-call="${clientLib.all @ categories='mydemo.headLibs'}" data-sly-unwrap/>
+
+<!--/* Initializes the Experience Manager authoring UI */-->
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp"/>
+
+</head>

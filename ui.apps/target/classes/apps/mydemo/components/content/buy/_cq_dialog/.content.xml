@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+        xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+        xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="a02_title"
+        sling:resourceType="cq/gui/components/authoring/dialog">
+        <content
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                        <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                        <well jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                <layout jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/layouts/well" />
+                                                <items jcr:primaryType="nt:unstructured">
+                                                        <title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                useFixedInlineToolbar="{Boolean}true"
+                                                                fieldLabel="a03_field_title"
+                                                                name="./title" />
+                                                        <image
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Select first image"
+                                                                fieldLabel="a04_field_image"
+                                                                required="{Boolean}true"
+                                                                name="./image"
+                                                                rootPath="/content/dam/mydemo" />
+                                                        <model
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                useFixedInlineToolbar="{Boolean}true"
+                                                                fieldLabel="a05_field_model"
+                                                                name="./model" />
+                                                        <description
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                useFixedInlineToolbar="{Boolean}true"
+                                                                fieldLabel="a06_field_description"
+                                                                name="./description" />
+                                                        <price
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                useFixedInlineToolbar="{Boolean}true"
+                                                                fieldLabel="a07_field_price"
+                                                                name="./price" />
+                                                </items>
+                                        </well>
+                                </items>
+                        </columns>
+
+                </items>
+        </content>
+</jcr:root>

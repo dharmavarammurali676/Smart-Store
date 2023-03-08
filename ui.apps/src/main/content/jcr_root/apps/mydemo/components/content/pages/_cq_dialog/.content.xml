@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        xmlns:cq="http://www.day.com/jcr/cq/1.0"
+        xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="i02_title"
+        sling:resourceType="cq/gui/components/authoring/dialog">
+        <content
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                        <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="i03_field_title"
+                                value="i04_field_value"
+                                name="./title" />
+                        <tabs
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                                maximized="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                        <tab1
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="i05_tab_1"
+                                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                                margin="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                        <columns
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items
+                                                                        jcr:primaryType="nt:unstructured">
+                                                                        <well
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                                                <layout
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/foundation/layouts/well" />
+                                                                                <items
+                                                                                        jcr:primaryType="nt:unstructured">
+                                                                                        <pageone
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i06_field_page_1"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pageone"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pagetwo
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i07_field_page_2"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pagetwo"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pagethree
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i08_field_page_3"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pagethree"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pagefour
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i09_field_page_4"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pagefour"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pagefive
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i010_field_page_5"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pagefive"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pagesix
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i011_field_page_6"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pagesix"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                </items>
+                                                                        </well>
+                                                                </items>
+                                                        </columns>
+                                                </items>
+                                        </tab1>
+                                        <tab2
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="i05_tab_2"
+                                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                                margin="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                        <columns
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items
+                                                                        jcr:primaryType="nt:unstructured">
+                                                                        <well
+                                                                                jcr:primaryType="nt:unstructured"
+                                                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                                                <layout
+                                                                                        jcr:primaryType="nt:unstructured"
+                                                                                        sling:resourceType="granite/ui/components/foundation/layouts/well" />
+                                                                                <items
+                                                                                        jcr:primaryType="nt:unstructured">
+                                                                                        <pageseven
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i012_field_page_7"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pageseven"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pageeight
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i013_field_page_8"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pageeight"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pagenine
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i014_field_page_9"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pagenine"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pageten
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i015_field_page_10"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pageten"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pageleven
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i016_field_page_11"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pageleven"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                        <pagetowel
+                                                                                                jcr:primaryType="nt:unstructured"
+                                                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                                                                fieldDescription="i018_field_description"
+                                                                                                fieldLabel="i017_field_page_12"
+                                                                                                required="{Boolean}true"
+                                                                                                name="./pagetowel"
+                                                                                                rootPath="/content/mydemo" />
+                                                                                </items>
+                                                                        </well>
+                                                                </items>
+                                                        </columns>
+                                                </items>
+                                        </tab2>
+                                </items>
+                        </tabs>
+                </items>
+        </content>
+</jcr:root>

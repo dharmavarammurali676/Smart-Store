@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Test Dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[cq.authoring.dialog,ul.component.mediagallery]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <gallery
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Gallery"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                        margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <custom
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fixedListFrom
+                                    granite:class="cq-dialog-dropdown-showhide"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldDescription="Select if the list will be generated using only AEM internal pages or combination of AEM internal pages and external URLs"
+                                    fieldLabel="Build Fixed List Using"
+                                    name="./fixedListFrom">
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-dialog-dropdown-showhide-target=".list-option-fixedListFrom-showhide-target"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <external
+                                            jcr:primaryType="nt:unstructured"
+                                            text="External"
+                                            value="external"/>
+                                    <static-content
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Static Content"
+                                            value="staticcontent"/>
+                                </items>
+                            </fixedListFrom>
+                            <page
+                                    granite:class="hide list-option-fixedListFrom-showhide-target foundation-layout-util-vmargin well-width__editor-override"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <multi
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true">
+                                        <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                                name="./fixedList">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <urlType
+                                                        granite:class="cq-dialog-dropdown-showhide-multi"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldDescription="Select if URL is internal page or external page. Don't use 'external' option if the URL is an internal/AEM page. Any metadata updates to internal pages should be done from page properties"
+                                                        fieldLabel="URL Type"
+                                                        name="./urlType">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <internal
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Internal"
+                                                                value="internal"/>
+                                                        <external
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="External/Internal - Override Attributes"
+                                                                value="external"/>
+                                                    </items>
+                                                    <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-required-target=".list-option-listfrom-required-target"
+                                                            cq-dialog-dropdown-showhide-target=".list-option-listfrom-showhide-target1"/>
+                                                </urlType>
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldLabel="Navigation URL"
+                                                        name="./page"
+                                                        rootPath="/content"/>
+                                                <externalURLContainer
+                                                        granite:class="list-option-listfrom-showhide-target1"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <tabId
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldLabel="TAB ID"
+                                                                name="./tabId"/>
+                                                        <resourcetype
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                fieldDescription="Select the respective resource type(jpeg|png|tiff|pdf)."
+                                                                fieldLabel="Resource Type"
+                                                                name="./resourceType">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <option1
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="JPG"
+                                                                        value="jpg"/>
+                                                                <option2
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="PNG"
+                                                                        value="png"/>
+                                                                <option3
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="TIFF"
+                                                                        value="tiff"/>
+                                                                <option4
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="PDF"
+                                                                        value="pdf"/>
+                                                            </items>
+                                                        </resourcetype>
+                                                        <alt
+                                                                granite:class="list-option-listfrom-required-target"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Enter alternative text for the Teaser image"
+                                                                fieldLabel="Alt Text valueess"
+                                                                name="./alt"
+                                                                required="{Boolean}true"/>
+                                                        <Title
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Title to be displayed for the item"
+                                                                fieldLabel="Title"
+                                                                name="./title"/>
+                                                    </items>
+                                                    <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            showhidetargetvalue="external"/>
+                                                </externalURLContainer>
+                                            </items>
+                                        </field>
+                                    </multi>
+                                </items>
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhidetargetvalue="external"/>
+                            </page>
+                            <static-page
+                                    granite:class="hide list-option-fixedListFrom-showhide-target foundation-layout-util-vmargin well-width__editor-override"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <multi
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true">
+                                        <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                                name="./staticContent">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <staticcontent-container
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/include"
+                                                        path="/apps/project/components/test/cq:dialog/content/items/tabs/items/listSettings/items/columns/items/column/items/setStatic/items/well/items/page/items/multi/field/items/externalURLContainer"/>
+                                            </items>
+                                        </field>
+                                    </multi>
+                                </items>
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhidetargetvalue="staticcontent"/>
+                            </static-page>
+                        </items>
+                    </custom>
+                </items>
+            </gallery>
+        </items>
+    </content>
+</jcr:root>

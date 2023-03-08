@@ -1,0 +1,117 @@
+<!--<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>-->
+<!--<sly data-sly-call="${clientlib.css @ categories='[mydemo.components.author.editor]'}"></sly>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="../../favicon.ico" />
+
+    <title>Input Label Slide Up On Hover</title>
+</head>
+<body>
+<div class="box">
+    <h2>Send Email</h2>
+    <form action="/secure/send/email" target="_blank" method="post">
+        <div><input type="text" name="name" required="" /> <label>Name</label></div>
+        <div>
+            <input type="text" name="email" required="" /> <label>Email</label>
+        </div>
+        <div>
+            <input type="text" name="subject" required="" /> <label>Subject</label>
+        </div>
+        <div><textarea required="message"></textarea> <label>Message</label></div>
+        <input type="submit" name="" value="Submit" />
+    </form>
+</div>
+</body>
+</html>
+
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(https://wallpaperaccess.com/full/1611624.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0, 0.2);
+}
+.box h2 {
+  margin: 0 0 40px;
+  padding: 0;
+  color: #f7497d;
+  text-transform: uppercase;
+}
+.box input {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+.box textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.box input,
+.box textarea {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+.box textarea {
+  margin-bottom: 20px;
+}
+.box input[type='submit'] {
+  border-bottom: none;
+  cursor: pointer;
+  background: #f7497d;
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.box form div {
+  position: relative;
+}
+.box form div label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #999;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.box input:focus ~ label,
+.box textarea:focus ~ label,
+.box input:valid ~ label,
+.box textarea:valid ~ label {
+  top: -12px;
+  left: 0;
+  color: #f7497d;
+  font-size: 12px;
+  font-weight: bold;
+}
+.box input:focus,
+.box textarea:focus,
+.box input:valid,
+.box textarea:valid {
+  border-bottom: 2px solid #f7497d;
+}
+
+</style>

@@ -1,0 +1,127 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories = 'mobilepropertiespage'}"/>
+
+<div data-sly-use.feature="com.sutrix.demo.core.models.features.Features"></div>
+
+  <div class="row">
+    <div class="sec">
+      <h2>${feature.FirstBrand}</h2>
+      <img src="${feature.Image}" height="370" width="370" />
+      <label for="modal-1" class="btn">Features</label>
+    </div>
+    <div class="sec">
+      <h2>${feature.SecondBrand}</h2>
+      <img src="${feature.SecondImage}" height="370" width="370" />
+      <label for="modal-2" class="btn">Features</label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modal-1" class="hs" />
+  <div class="modal-wrapper">
+    <div class="modalbox">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="high">Highlights &#9989;</h2>
+          <label for="modal-1" class="close">&#10060</label>
+        </div><br>
+
+        <div class="modal-content-body">
+          <table style="width:70%">
+            <tr>
+              <th>Model:</th>
+              <td align="center">${feature.Model}</td>
+            </tr>
+            <tr>
+              <th>Processor:</th>
+              <td align="center">${feature.Processor}</td>
+            </tr>
+            <tr>
+              <th>RearCamera:</th>
+              <td align="center">${feature.RearCamera}</td>
+            </tr>
+            <tr>
+              <th>SimType:</th>
+              <td align="center">${feature.SimType}</td>
+            </tr>
+            <tr>
+              <th>BatteryCapacity:</th>
+              <td align="center">${feature.BatteryCapacity}</td>
+            </tr>
+            <tr>
+              <th>Warrenty:</th>
+              <td align="center">${feature.Warrenty}</td>
+            </tr>
+            <tr>
+              <th>Ram:</th>
+              <td align="center">${feature.Ram}</td>
+            </tr>
+            <tr>
+              <th>Rom:</th>
+              <td align="center">${feature.Rom}</td>
+            </tr>
+            <tr>
+              <th>Price:</th>
+              <td align="center" style="color:rgb(246, 9, 179);">${feature.Price}</td>
+            </tr>
+          </table><br>
+          <p> &#10004; ${feature.FirstDescription}</p>
+          <a style="color:blue;" href="${feature.FirstLink}.html">Buy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modal-2" class="hs" />
+  <div class="modal-wrapper">
+    <div class="modalbox">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="high">Highlights &#9989;</h2>
+          <label for="modal-2" class="close">&#10060</label>
+        </div><br>
+
+        <div class="modal-content-body">
+          <table style="width:70%">
+            <tr>
+              <th>Model:</th>
+              <td align="center">${feature.SecondModel}</td>
+            </tr>
+            <tr>
+              <th>Processor:</th>
+              <td align="center">${feature.SecondProcessor}</td>
+            </tr>
+            <tr>
+              <th>RearCamera:</th>
+              <td align="center">${feature.SecondRearCamera}</td>
+            </tr>
+            <tr>
+              <th>SimType:</th>
+              <td align="center">${feature.SecondSimType}</td>
+            </tr>
+            <tr>
+              <th>BatteryCapacity:</th>
+              <td align="center">${feature.SecondBatteryCapacity}</td>
+            </tr>
+            <tr>
+              <th>Warrenty:</th>
+              <td align="center">${feature.SecondWarrenty}</td>
+            </tr>
+            <tr>
+              <th>Ram:</th>
+              <td align="center">${feature.SecondRam}</td>
+            </tr>
+            <tr>
+              <th>Rom:</th>
+              <td align="center">${feature.SecondRom}</td>
+            </tr>
+            <tr>
+              <th>Price:</th>
+              <td align="center" style="color:rgb(246, 9, 179);">${feature.SecondPrice}</td>
+            </tr>
+          </table><br>
+          <p>&#10004; ${feature.SecondDescription}</p>
+          <a style="color:blue;" href="${feature.SecondLink}.html">Buy</a>
+        </div>
+      </div>
+    </div>
+  </div>

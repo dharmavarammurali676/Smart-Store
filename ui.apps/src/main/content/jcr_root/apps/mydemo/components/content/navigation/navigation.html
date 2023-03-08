@@ -1,0 +1,26 @@
+<div style="color:blue;margin:5px 0px 5px 5px;" data-sly-test="${wcmmode.edit}">
+  Navigation component
+</div>
+<sly data-sly-use.navComp="com.sutrix.demo.core.models.pojonav.NavigationComponent" data-sly-unwrap>
+  <nav data-menu="" class="main-menu-wrapper" data-sly-test.hasContent="${navComp.menuItems}">
+    <div class="container">
+      <ul class="main-menu menu-level-1">
+        <sly data-sly-list="${navComp.menuItems}" data-sly-unwrap>
+          <li data-sly-test.hasContent="${!item.children}"><a title="${item.title}" href="${item.path}.html">${item.title}</a></li>
+          <li class="has-child" data-sly-test.hasContent="${item.children}">
+            <a title="${item.title}" href="${item.path}.html">${item.title}</a>
+            <div class="sub-menu sub-menu-3">
+              <div class="menu-col">
+                <ul class="menu-level-2">
+                  <sly data-sly-list="${item.children}" data-sly-unwrap>
+                    <li><a title="${item.title}" href="${item.path}.html">${item.title}</a></li>
+                  </sly>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </sly>
+      </ul>
+    </div>
+  </nav>
+</sly>

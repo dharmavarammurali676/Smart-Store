@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>My Demo - UI apps</comment>
+<entry key="path">/etc/packages/Sutrix Solutions/mydemo.ui.apps.zip</entry>
+<entry key="createdBy">dharmavaram.m</entry>
+<entry key="created">2023-03-06T18:05:04.627+0530</entry>
+<entry key="groupId">com.sutrix.demo</entry>
+<entry key="name">mydemo.ui.apps</entry>
+<entry key="description">UI apps package for My Demo</entry>
+<entry key="artifactId">mydemo.ui.apps</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">Sutrix Solutions</entry>
+</properties>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="g02_title"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="g03_tab_1"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <well jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/well" />
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="g05_image_description"
+                                                fieldLabel="g04_field_image"
+                                                required="{Boolean}true"
+                                                name="./image"
+                                                rootPath="/content/dam/mydemo" />
+                                            <firstbrand
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g06_field_firstbrand"
+                                                fieldDescription="g07_firstbrand_description"
+                                                name="./firstbrand" />
+                                            <firstdescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldLabel="g08_field_firstdescription"
+                                                fieldDescription="g09_firstdescription_description"
+                                                name="./firstdescription"
+                                                value="Any new smartphone has a gimmick. Whether it's wireless charging, fingerprint scanning or even eye-tracking, there's always an amazing feature you can't live without. But let's be honest: many of those features you really can live without."
+                                                useFixedInlineToolbar="{Boolean}true" />
+                                            <firstlink
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="g010_field_firstlink"
+                                                    fieldDescription="g011_firstlink_description"
+                                                    name="./firstlink" />
+                                        </items>
+                                    </well>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab1>
+                    <tab2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="g03_tab_2"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <well jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/well" />
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <model
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g012_field_model"
+                                                name="./model" />
+                                            <price
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g013_field_price"
+                                                name="./price" />
+                                            <processor
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g014_field_processor"
+                                                name="./processor" />
+                                            <rearcamera
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g015_field_rear_camera"
+                                                name="./rearcamera" />
+                                            <simtype
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g016_field_sim_type"
+                                                name="./simtype" />
+                                            <batterycapacity
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g017_field_battery_capacity"
+                                                name="./batterycapacity" />
+                                            <warrenty
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g018_field_warranty"
+                                                name="./warrenty" />
+                                            <ram
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g019_field_ram"
+                                                name="./ram" />
+                                            <rom
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g020_field_rom"
+                                                name="./rom" />
+                                        </items>
+                                    </well>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab2>
+                    <tab3
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="g03_tab_3"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <well jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/well" />
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <secondimage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="g022_image_description"
+                                                fieldLabel="g021_field_second_image"
+                                                required="{Boolean}true"
+                                                name="./secondimage"
+                                                rootPath="/content/dam/mydemo" />
+                                            <secondbrand
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g23_field_secondbrand"
+                                                fieldDescription="g024_secondbrand_description"
+                                                name="./secondbrand" />
+
+                                            <seconddescription
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldLabel="g025_field_seconddescription"
+                                                fieldDescription="g026_seconddescription_description"
+                                                name="./seconddescription"
+                                                value="On the other hand, some of the futuristic technology available in next-generation smartphones is really useful. This definitive list ranks 10 useful features your smartphone needs to have."
+                                                useFixedInlineToolbar="{Boolean}true" />
+                                            <secondlink
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="g027_field_secondlink"
+                                                    fieldDescription="g028_secondlink_description"
+                                                    name="./secondlink" />
+                                        </items>
+                                    </well>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab3>
+                    <tab4
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="g03_tab_4"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <well jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/container">
+                                        <layout jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/layouts/well" />
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <secondmodel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g012_field_model"
+                                                name="./secondmodel" />
+                                            <secondprice
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g013_field_price"
+                                                name="./secondprice" />
+                                            <secondprocessor
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g014_field_processor"
+                                                name="./secondprocessor" />
+                                            <secondrearcamera
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g015_field_rear_camera"
+                                                name="./secondrearcamera" />
+                                            <secondsimtype
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g016_field_sim_type"
+                                                name="./secondsimtype" />
+                                            <secondbatterycapacity
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g017_field_battery_capacity"
+                                                name="./secondbatterycapacity" />
+                                            <secondwarrenty
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g018_field_warranty"
+                                                name="./secondwarrenty" />
+                                            <secondram
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g019_field_ram"
+                                                name="./secondram" />
+                                            <secondrom
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="g020_field_rom"
+                                                name="./secondrom" />
+                                        </items>
+                                    </well>
+                                </items>
+                            </columns>
+                        </items>
+                    </tab4>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
