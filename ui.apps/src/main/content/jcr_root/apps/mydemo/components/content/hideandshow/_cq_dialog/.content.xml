@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="k02_title"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[mydemo.author.accordion]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/select"
+                            class="cq-dialog-dropdown-showhide"
+                            cq-dialog-dropdown-showhide-target=".carousel-showhide-target"
+                            fieldLabel="k09_list_label"
+                            name="./listregular">
+                        <items jcr:primaryType="nt:unstructured">
+                            <AddEmails
+                                    jcr:primaryType="nt:unstructured"
+                                    text="AddEmails"
+                                    value="addemails"/>
+                            <EmployeeDetails
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Employee Details"
+                                    value="employeedetails"/>
+                        </items>
+                    </list>
+                    <setAddEmails
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            class="hide carousel-showhide-target foundation-layout-util-vmargin"
+                            showhidetargetvalue="addemails">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/heading"
+                                    class="coral-Heading coral-Heading--4"
+                                    level="{Long}4"
+                                    text="Add Email's - "/>
+                            <addemail
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="{Boolean}true"
+                                    fieldLabel="k03_multi_field">
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        max-item="2"
+                                        min-item="1"/>
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./addemails">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <addemails
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="k04_field_email"
+                                                        emptyText="k05_empty_text"
+                                                        name="./addemails"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </addemail>
+                        </items>
+                    </setAddEmails>
+                    <setEmployeeDetails
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container"
+                            class="hide carousel-showhide-target foundation-layout-util-vmargin"
+                            showhidetargetvalue="employeedetails">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/heading"
+                                    class="coral-Heading coral-Heading--4"
+                                    level="{Long}4"
+                                    text="Add EmployeeDetails - "/>
+                            <EmployeeDetails
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="{Boolean}true"
+                                    fieldLabel="k06_multi_field_emp">
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        max-item="5"
+                                        min-item="2"/>
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./employeedetails">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <employeeid
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="k07_field_empty_text_id"
+                                                        name="./employeeid"/>
+                                                <employeename
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Please enter valid email"
+                                                        emptyText="k07_field_empty_name"
+                                                        validation="mydemo-name-validation"
+                                                        name="./employeename">
+                                                    <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toggle-textfield_master=""/>
+                                                </employeename>
+                                                <slave
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        emptyText="k07_field_empty_number"
+                                                        fieldDescription="enter your mobile number"
+                                                        validation="mydemo-employeemobileno-validation"
+                                                        name="./mobileno"
+                                                        useFixedInlineToolbar="{Boolean}true" >
+                                                    <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            toggle-textfield_slave=""/>
+                                                </slave>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </EmployeeDetails>
+                        </items>
+                    </setEmployeeDetails>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

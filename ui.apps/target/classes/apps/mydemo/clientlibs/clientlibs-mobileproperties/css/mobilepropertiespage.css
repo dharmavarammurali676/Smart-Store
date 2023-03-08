@@ -1,0 +1,130 @@
+ html,
+  body {
+    font-family: tahoma;
+    min-height: 100%;
+    width: 100%;
+    line-height: 1.59;
+    margin: 0;
+    color: #333;
+    background:rgba(221, 221, 222, 0.899);";
+    overflow: hidden;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 4em;
+    background: #f15395;
+    z-index: 10;
+    transition: all 0.3s ease-in;
+  }
+
+  .btn:hover {
+    background: #ce2b52;
+    color: #fff;
+  }
+
+  .row {
+    width: 1400px;
+    max-width: 1200px;
+    margin: 2em auto;
+  }
+
+  .row::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+.row .sec {
+    text-align: center;
+    width: calc(50% - 4em - 4px - 40px);
+    margin: 0 10px;
+    float: left;
+    padding: 3em 2em;
+    margin-left: 22px;
+  }
+
+  .hs {
+    opacity: 0;
+    display: none;
+  }
+
+  .modal-wrapper {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s ease-in;
+    z-index: -10;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+  }
+
+  .modal-wrapper .modal-header {
+    position: relative;
+  }
+
+  .modal-wrapper .modal-content {
+    padding: 1em 2em;
+  }
+
+  .modal-wrapper .modal-content-body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input[id^="modal"]:checked+.modal-wrapper {
+    opacity: 1;
+    z-index: 100;
+    transform: scale(1);
+    transition: all 0.2s ease-out;
+    height: 100vh;
+  }
+
+  input[id^="modal"]:checked+.modal-wrapper>.modalbox {
+    opacity: 1;
+    z-index: 100;
+    transform: scale(1);
+    transition: all 0.3s ease-out 0.2s;
+  }
+
+  .modal-wrapper .modalbox {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s ease-in;
+    background: rgb(243, 248, 243);
+    color: #0b0b0b;
+    height: auto;
+    width: 70%;
+    margin: 2em auto;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  .high {
+    border: 2px solid rgb(243, 42, 42);
+    padding: 7px;
+  }
+
+  .close {
+    color: #060606;
+    float: right;
+    font-size: 20px;
+    position: relative;
+    top: -57px;
+    left: 39px;
+  }
+
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }

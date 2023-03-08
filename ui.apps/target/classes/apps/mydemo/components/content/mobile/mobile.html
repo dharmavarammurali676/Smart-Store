@@ -1,0 +1,60 @@
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientlib.js @ categories='[mydemo.components.mobile.editor]'}"></sly>
+
+<div style="color:red;margin:5px 0px 5px 5px;" data-sly-test="${wcmmode.edit}">
+  Smart Phone
+</div>
+<div data-sly-use.mobile="com.sutrix.demo.core.models.mobile.Mobile"></div>
+<img src="${mobile.Images}" height="250"/>
+<p><b>Mobile Name :</b>${mobile.MobileName}</p>
+
+<p><b>Mobile Model :</b>${mobile.MobileModel}</p>
+
+<p><b>Price :</b>${mobile.Price}</p>
+
+<!--<button><a href="${mobile.feature}" target="_blank">-->
+<!--</a></button>-->
+<!--<button> <a href="${mobile.feature}.html">Feature's</a> </button>-->
+<button> <a href="${mobile.Features}.html" target="_blank" class="button button1">More details </a> </button>
+<button> <a href="${mobile.Link}.html" target="_blank" class="button button2"> BUY </a> </button><br>
+
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {font-size: 10px;}
+.button2 {font-size: 10px;}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+</style>

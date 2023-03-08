@@ -1,0 +1,53 @@
+<div style="color:red;margin:5px 0px 5px 5px;" data-sly-test="${wcmmode.edit}">
+  Choose Your mobile page ~
+</div>
+<sly data-sly-use.navComps="com.sutrix.demo.core.models.pojonav.NavigationComponent" data-sly-unwrap>
+  <nav data-menu="" class="main-menu-wrapper" data-sly-test.hasContent="${navComps.menuItems}">
+    <div class="container">
+      <ul class="main-menu menu-level-1">
+        <sly data-sly-list="${navComps.menuItems}" data-sly-unwrap>
+          <li data-sly-test.hasContent="${!item.children}"><a title="${item.title}" target="_blank" href="${item.path}.html">${item.title}</a></li>
+          <li class="has-child" data-sly-test.hasContent="${item.children}">
+            <a title="${item.title}" target="_blank" href="${item.path}.html">${item.title}</a>
+            <a href="https://sutrixgroup.com/en/about/" style="float:right">Contact us</a>
+            <div class="sub-menu sub-menu-3">
+              <div class="menu-col">
+                <ul class="menu-level-2">
+                  <sly data-sly-list="${item.children}" data-sly-unwrap>
+                    <li><a title="${item.title}" target="_blank" href="${item.path}.html">${item.title}</a></li>
+                  </sly>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </sly>
+      </ul>
+    </div>
+  </nav>
+</sly>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>

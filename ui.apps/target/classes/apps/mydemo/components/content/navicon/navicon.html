@@ -1,0 +1,460 @@
+
+<body >
+<div class="wrapper">
+    <nav class="nav" style="background-color:rgb(251, 251, 248);"  >
+        <div data-sly-use.nav="com.sutrix.demo.core.models.navimage.NavImage">
+            <img src="${nav.Image}" height="80" width="300"class="hello">
+        </div>
+
+        <ul class="nav__items">
+            <li class="nav__item nav__link">
+                <a class="link" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox.html">Mail</a>
+            </li>
+            <li class="nav__item nav__link">
+                <a class="link" href="http://localhost:6502/assets.html/content/dam/mydemo.html">Images</a>
+            </li>
+            <li class="nav__item nav__button">
+                <label for="nav_show"></label>
+                <input type="checkbox" class="nav__btn" id="nav_show">
+                <div class="popup">
+                    <ul class="popup__items popup__first">
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/audio_volume_high.png" alt="audio_volume_high">
+                                <p>Volume</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/diskette.png" alt="diskette">
+                                <p>Diskette</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/envelope_open.png" alt="envelope_open">
+                                <p>Messages</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/group.png" alt="group">
+                                <p>Group</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/lock_open.png" alt="lock_open">
+                                <p>Locker</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/microphone.png" alt="microphone">
+                                <p>Microphone</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/refresh.png" alt="refresh">
+                                <p>Refresh</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/hourglass.png" alt="hourglass">
+                                <p>Timer</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/traffic_lights1.png" alt="traffic_lights1">
+                                <p>Traffic</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="./img/technical_screw.png" alt="technical_screw">
+                                <p>Screw</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/technical_wrench.png" alt="technical_wrench">
+                                <p>Wrench</p>
+                            </a>
+                        </li>
+                        <li class="popup__item">
+                            <a href="#" class="popup__link">
+                                <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/technical_screw.png" alt="technical_hammer">
+                                <p>Hammer</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="more__btn">
+                        <label for="more"></label>
+                        <input type="checkbox" id="more" class="more"/>
+                        <ul class="popup__items popup__second">
+                            <li class="popup__item">
+                                <a href="#" class="popup__link">
+                                    <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/calendar.png" alt="calendar">
+                                    <p>Calendar</p>
+                                </a>
+                            </li>
+                            <li class="popup__item">
+                                <a href="#" class="popup__link">
+                                    <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/hand_point.png" alt="hand_point">
+                                    <p>Hand</p>
+                                </a>
+                            </li>
+                            <li class="popup__item">
+                                <a href="#" class="popup__link">
+                                    <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/copy2.png" alt="copy2">
+                                    <p>Copy</p>
+                                </a>
+                            </li>
+                            <li class="popup__item">
+                                <a href="#" class="popup__link">
+                                    <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/history.png" alt="history">
+                                    <p>History</p>
+                                </a>
+                            </li>
+                            <li class="popup__item">
+                                <a href="#" class="popup__link">
+                                    <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/zoom.png" alt="zoom">
+                                    <p>Zoom</p>
+                                </a>
+                            </li>
+                            <li class="popup__item">
+                                <a href="#" class="popup__link">
+                                    <img class="popup__img" src="/content/assets/assetedit.html/content/dam/mydemo/navicons/windows.png" alt="windows">
+                                    <p>Windows</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav__item nav__bell">
+                <a class="link" href="http://localhost:6502/aem/inbox.html">
+                    <img class="nav__img" src="data:image/png;base64,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" alt="bell">
+                </a>
+            </li>
+            <li class="nav__item nav__avatar">
+                <a class="link" href="#">
+                    <img class="nav__img" src="data:image/jpeg;base64,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" alt="Author">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
+
+<style>
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Nav*/
+
+.nav {
+    padding: 10px;
+    width: 1300px;
+
+}
+
+.nav__items {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__item {
+    margin-left: 7px;
+}
+
+.nav__item .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.nav__avatar .link {
+    padding: 6px;
+}
+
+.nav__button {
+    position: relative;
+    border-radius: 50%;
+}
+
+.nav__link {
+    position: relative;
+}
+
+.nav__link > .link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 3px;
+    left: 0;
+    background-color: #757575;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav__link .link:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav__avatar .link:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+    transition: 0.3s;
+}
+
+.nav__button .nav__btn,
+.nav__bell .nav__img {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+}
+
+.nav__avatar .nav__img {
+    position: relative;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+.nav__img img {
+    width: 100%;
+}
+
+.nav__avatar img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nav__btn {
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    background: url(/content/dam/mydemo/navicons/popup-button.png) no-repeat center;
+    background-size: 20px;
+    -webkit-background-size: 20px 20px;
+    -webkit-appearance: none;
+    padding: 18px;
+}
+
+.nav__bell .link:hover {
+    animation: ring 0.6s ease;
+    animation-iteration-count: 1;
+}
+
+.nav__btn:focus,
+.nav__bell .link:hover,
+.nav__btn:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+    transition: 0.3s;
+}
+
+/*Popup*/
+
+.nav__btn:checked ~ .popup {
+    display: block;
+}
+
+.popup {
+    position: absolute;
+    top: 50px;
+    right: -104px;
+    display: none;
+    min-width: 335px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 2px 6px 2px rgba(60, 64, 67, .15);
+    overflow-x: hidden;
+    width: 100%;
+    background: #fff;
+    max-height: 100%;
+    box-sizing: content-box;
+    min-height: 520px;
+}
+
+.popup__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.popup__item {
+    width: calc(100% / 3);
+    height: 100px;
+    margin-top: 15px;
+
+}
+
+.popup__item:hover {
+    background-color: #eeeeee;
+    transition: 0.6s;
+}
+
+.popup__link:focus {
+    background-color: #eeeeee;
+}
+
+.popup__item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 6px;
+}
+
+.popup__img {
+    display: flex;
+    align-items: center;
+    max-width: 53px;
+    max-height: 53px;
+}
+
+.popup__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.popup__more {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    background-color: #eeeeee;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.popup__more:hover {
+    background-color: #f1f1f1;
+}
+
+.popup__second {
+    display: none;
+    margin-top: 35px;
+    padding: 25px 5px;
+    position: relative;
+}
+
+.popup__second::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #eeeeee;
+    top: 0;
+    left: 0;
+}
+
+.more__btn {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.more__btn .more {
+    background: #ebebeb;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    -webkit-appearance: none;
+}
+
+.more__btn .more:after {
+    content: 'More';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.cat-link {
+    margin: 20px auto 0 auto;
+}
+
+.more:checked ~ .popup__second {
+    display: flex;
+}
+
+.more:checked {
+    display: none;
+}
+
+@keyframes ring {
+    15% {
+        transform: rotate(20deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    65% {
+        transform: rotate(-15deg);
+    }
+    85% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+</style>
+<style>
+    .hello{
+   margin-left: 150px;
+   top: 85px;
+    }
+</style>

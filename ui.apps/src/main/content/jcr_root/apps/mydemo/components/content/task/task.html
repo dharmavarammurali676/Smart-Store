@@ -1,0 +1,14 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories = '[mydemo.components.author.editor]'}"/>
+
+
+<div data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></div>
+<sly data-sly-call="${templates.placeholder @ isEmpty=!hasContent, classAppend='cmp-task'}"></sly>
+<div data-sly-use.model="com.sutrix.demo.core.models.task.MyComponentModel"></div>
+
+${model.text}
+${model.options}
+<!--<div data-sly-list.item="${t.options}">-->
+
+<!--<p>Title : ${item.options}</p>-->
+<!--</div>-->

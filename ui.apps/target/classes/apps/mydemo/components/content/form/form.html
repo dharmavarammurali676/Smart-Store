@@ -1,0 +1,146 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories = 'orderpage'}"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK_8j2pTcXQZtwrU3cjz78GtWaBaoMpGB8Eg&usqp=CAU" type="image/png" sizes="16x16">
+    <title>Booking</title>
+</head>
+<body>
+<form action="/book/your/smart/phone" method="post" target="_blank">
+<div class="wrapper">
+    <div class="title">
+        <h6>Murali Smart Phones</h6>
+        Book Your Smart Phone
+    </div>
+    <div class="form">
+        <div class="inputfield">
+            <label><b>First Name</b></label>
+            <input type="text" class="input" name="firstname">
+        </div>
+        <div class="inputfield">
+            <label><b>Last Name</b></label>
+            <input type="text" class="input" name="lastname">
+        </div>
+        <div class="inputfield">
+            <label ><b>Gender</b></label>
+            <div class="custom_select">
+                <select name="gender">
+                    <option value="" name="select">Select</option>
+                    <option value="male" name="male">Male</option>
+                    <option value="female" name="female">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="inputfield">
+            <label><b>Email Address</b></label>
+            <input type="text" class="input" name="email">
+        </div>
+        <div class="inputfield">
+            <label><b>Phone Number</b></label>
+            <input type="text" class="input" name="phonenumber">
+        </div>
+        <div class="inputfield">
+            <label><b>Select Mobile</b></label>
+            <div class="select_mobile" >
+                <select name="mobiles">
+                    <option value="" name="mobile">Select</option>
+                    <option value="vivo" name="vivo">Vivo</option>
+                    <option value="oppo" name="oppo">Oppo</option>
+                    <option value="realme" name="realme">Realme</option>
+                    <option value="redmi" name="redmi">Redmi</option>
+                    <option value="samsung" name="samsung">Samsung</option>
+                    <option value="iphone" name="iphone">iPhone</option>
+                    <option value="nothing" name="nathing">Nathing</option>
+                    <option value="itel" name="itel">Itel</option>
+                    <option value="pocco" name="pocco">Pocco</option>
+                    <option value="infinix" name="infinix">Infinix</option>
+                    <option value="nokia" name="nokia">Nokia</option>
+                    <option value="moto" name="moto">Moto</option>
+                </select>
+            </div>
+        </div>
+        <div class="inputfield">
+            <label><b>Select Model</b></label>
+            <div class="select_model">
+                <select name="models">
+                    <option value="" name="model">Select</option>
+                    <option value="vivo" style="background-color:rgb(180, 180, 180);"><b>Vivo</b></option>
+                    <option value="v23"name="v23gold">V23 5G (Gold)</option>
+                    <option value="v23" name="v23black">V23 5G (Back)</option>
+                    <option value="v23pro" name="v23pro">V23 pro 5G</option>
+                    <option value="v25" name="v25">V25</option>
+                    <option value="v25pro" name="v25problack">V25 pro 5G (Black)</option>
+                    <option value="v25pro" name="v25blue">V25 pro 5G (Blue)</option>
+                    <option value="realme" style="background-color:rgb(180, 180, 180);"><b>Realme</b></option>
+                    <option value="8"name="8">8</option>
+                    <option value="8 pro" name="8pro">8 pro (Black)</option>
+                    <option value="9" name="9">9 (Blue)</option>
+                    <option value="9pro" name="9pro">9pro (White)</option>
+                    <option value="samsung" style="background-color:rgb(180, 180, 180);"><b>Samsung</b></option>
+                    <option value="galaxy" name="galaxyf22">Galaxy F22 (Black)</option>
+                    <option value="galaxym04" name="galaxym04">galaxy M04</option>
+                    <option value="redmi" style="background-color:rgb(180, 180, 180);"><b>Redmi</b></option>
+                    <option value="note9" name="note9">Note 9</option>
+                    <option value="note9pro" name="note9pro">Note 9 pro (White)</option>
+                    <option value="note10" name="note10">Note 10 (Black)</option>
+                    <option value="10pro" name="note10pro">Note 10 pro (Blue)</option>
+                    <option value="11" name="note11max">Note 11 Max</option>
+                    <option value="max" name="maxpro">Note 11 Pro Max</option>
+                    <option value="12" name="note12pro">Note 12 pro</option>
+                    <option value="itel" style="background-color:rgb(180, 180, 180);" name="iteltwo">Itel</option>
+                    <option value="pocco" style="background-color:rgb(180, 180, 180);"><b>Pocco</b></option>
+                    <option value="x" name="x3">X3</option>
+                    <option value="x4" name="x4">X4 pro</option>
+                    <option value="f4" name="f4">F4 5G</option>
+                    <option value="infinix" style="background-color:rgb(180, 180, 180);" name="inf">Infinix</option>
+                    <option value="nokia" style="background-color:rgb(180, 180, 180);" name="nokiatwo">Nokia</option>
+                    <option value="moto" style="background-color:rgb(180, 180, 180);" name="mototwo">Moto</option>
+                </select>
+            </div>
+        </div>
+        <div class="inputfield">
+            <label><b>Address</b></label>
+            <textarea class="textarea" name="address"></textarea>
+        </div>
+        <div class="inputfield">
+            <label><b>Postal Code</b></label>
+            <input type="text" class="input" name="postalcode">
+        </div>
+        <div class="inputfield">
+            <label><b>Payment</b></label>
+            <div class="select_payment" >
+                <select name="payment">
+                    <option value="" name="pay">Select</option>
+                    <option value="PHONE PAY" name="PHONE PAY">Phone Pay</option>
+                    <option value="GOOGLE PAY" name="GOOGLE PAY">Google Pay</option>
+                    <option value="COD" name="COD">Cash on Delivery</option>
+                    <option value="PAYTM" name="PAYTM">Paytm</option>
+                </select>
+            </div>
+        <div class="inputfield terms">
+            <label class="check">
+                <input type="checkbox">
+                <span class="checkmark" ></span>
+            </label>
+            <p>Agreed to terms and conditions</p>
+        </div>
+        <div class="inputfield">
+            <input type="submit" value="Book Mobile" class="btn" onclick="callAlert();">
+        </div>
+    </div>
+</div>
+</div>
+</form>
+</body>
+</html>
+<script>
+    function callAlert(){
+    swal({
+          title: " Booked ",
+          text: "Thank you",
+          button: "OK",
+          });
+          }
+</script>

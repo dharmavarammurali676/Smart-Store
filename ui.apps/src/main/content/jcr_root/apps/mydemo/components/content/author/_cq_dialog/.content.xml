@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="b02_title"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[mydemo.components.author.editor]">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <text-toggle
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="z001_properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <fname
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="b03_field_firstname"
+                                                name="./fname"
+                                                validation="mydemo-firstname-validation" />
+                                            <lname
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="b03_field_lastname"
+                                                name="./lname"
+                                                required="{Boolean}false"
+                                                validation="mydemo-lastname-validation" />
+                                            <email
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                fieldDescription="Please enter valid email"
+                                                fieldLabel="b05_field_email"
+                                                name="./email"
+                                                validation="mydemo-email-validation" />
+                                            <dropdown
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    fieldLabel="b06_field_dropdown"
+                                                    name="./dropdown"
+                                                    options="option1=Option 1|option2=Option 2|option3=Option 3"/>
+                                            <textfield
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    fieldLabel="b07_field_textfield"
+                                                    name="./text"/>
+<!--                                            <submit-->
+<!--                                                sling:resourceType="granite/ui/components/foundation/form/submit"-->
+<!--                                                text="Send"-->
+<!--                                                jcr:primaryType="nt:unstructured"-->
+<!--                                                required="{Boolean}True"-->
+<!--                                                name="./submit" />-->
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </text-toggle>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

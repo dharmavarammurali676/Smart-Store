@@ -1,0 +1,19 @@
+<!--<div style="color:red;margin:5px 0px 5px 5px;" data-sly-test="${wcmmode.edit}">-->
+<!--  Smart Phone-->
+<!--</div>-->
+<div data-sly-use.carouselModel="com.sutrix.demo.core.models.CarouselModel" data-sly-unwrap>
+	<section class="slider-1" data-sly-test.hasContent="${carouselModel.carousels}">
+		<div data-slider="" data-init="6" class="slick-container">
+			<div data-sly-list.carousel="${carouselModel.carousels.listChildren}" data-sly-unwrap>
+				<section class="slider-1">
+					<div data-slider="" data-init="6" class="slick-container">
+						<div class="slider-item">
+							<h3 class="title-5-red">${carousel.title}</h3><img src="${carousel.imagePath}" height="500" width="1500"/>
+<!--							<button> <a href="https://sutrixgroup.com/en/" target="_blank">Go to Sutrix</a> </button>-->
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</section>
+</div>
