@@ -1,7 +1,5 @@
 package com.sutrix.demo.core.javapracties;
 
-import com.twilio.rest.verify.v2.service.Verification;
-import net.sf.saxon.functions.Put;
 
 import java.util.Collection;
 import java.util.Hashtable;
