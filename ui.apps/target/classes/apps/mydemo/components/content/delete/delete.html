@@ -4,17 +4,19 @@
     <div class="container" id="container">
         <div>
             <div class="form-container sign-up-container">
-                <form action="#">
+                <form action="/smartphone/show&delete/order" method="post" target="_blank">
                     <h2 class="h21">Delete Order</h2>
-                        <input type="email" placeholder="Order ID" name="id" />
+                        <input type="em" placeholder="Enter registered email" name="regEmail" />
+                    <input type="id" placeholder="Order ID" name="orderId" />
                         <h3>(or)</h3>
                         <h2 class="h22">Delete All Orders</h2>
-                            <input type="email" placeholder="Enter registered email" name="regemail" />
-                            <div class="btn-grad1" >Delete</div>
+                            <input type="email" placeholder="Enter registered email" name="deleteEmail" />
+                    <button class="btn-grad1">Delete</button>
+
                 </form>
             </div>
             <div class="form-container sign-in-container">
-                <form action="/smartphone/show/order" method="post" target="_blank">
+                <form action="/smartphone/show&delete/order" method="post" target="_blank">
                     <h1>Show my orders</h1>
                     <input type="id" placeholder="Enter registred email" name="email" />
                     <button class="btn-grad">Show</button>
@@ -31,7 +33,7 @@
                         <p>
                             Shows my order ID's
                         </p>
-                        <div class="btn-grad" id="signIn">Go</div>
+                        <div class="btn-grad" id="signIn">Go to Show</div>
                     </div>
                     <div class="overlay-panel overlay-right">
                         <h1>Here,</h1>

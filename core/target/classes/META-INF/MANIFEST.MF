@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1678520511142
+Bnd-LastModified: 1678540059844
 Build-Jdk: 11.0.16.1
 Built-By: dharmavaram.m
 Bundle-Description: Core bundle for My Demo
@@ -149,19 +149,19 @@ Service-Component: OSGI-INF/com.sutrix.demo.core.config.impl.CQMailServi
  rvlets.login.SignInServlet.xml,OSGI-INF/com.sutrix.demo.core.servlets.o
  rder.BookingServlet.xml,OSGI-INF/com.sutrix.demo.core.servlets.order.De
  leteBookingServlet.xml,OSGI-INF/com.sutrix.demo.core.servlets.order.OTP
- Servlet.xml,OSGI-INF/com.sutrix.demo.core.servlets.order.ShowOrdersServ
- let.xml,OSGI-INF/com.sutrix.demo.core.servlets.search.DeleteBookingServ
- let.xml,OSGI-INF/com.sutrix.demo.core.workflow.CustomWorkflow.xml,OSGI-
- INF/com.sutrix.demo.core.workflow.DownloadAssetServlet.xml,OSGI-INF/com
- .sutrix.demo.core.workflow.MyWorkFlowProcess.xml,OSGI-INF/com.sutrix.de
- mo.core.workflow.MydemoWorkFlowStep.xml,OSGI-INF/com.sutrix.demo.core.w
- orkflow.TriggerWorkflowServlet.xml,OSGI-INF/com.sutrix.demo.core.workfl
- ow.particpant.DynamicParticipantStep.xml,OSGI-INF/com.sutrix.demo.core.
- workflow.particpant.DynamicParticipantStepTwo.xml,OSGI-INF/com.sutrix.d
- emo.core.workflow.processstep.ApprovedProcessStep.xml,OSGI-INF/com.sutr
- ix.demo.core.workflow.processstep.FirstProcessStep.xml,OSGI-INF/com.sut
- rix.demo.core.workflow.processstep.ProcessStep.xml,OSGI-INF/com.sutrix.
- demo.core.workflow.processstep.RejectedProcessStep.xml,OSGI-INF/com.sut
- rix.demo.core.workflow.processstep.SecondProcessStep.xml
+ Servlet.xml,OSGI-INF/com.sutrix.demo.core.servlets.order.ShowandDeleteO
+ rdersServlet.xml,OSGI-INF/com.sutrix.demo.core.servlets.search.DeleteBo
+ okingServlet.xml,OSGI-INF/com.sutrix.demo.core.workflow.CustomWorkflow.
+ xml,OSGI-INF/com.sutrix.demo.core.workflow.DownloadAssetServlet.xml,OSG
+ I-INF/com.sutrix.demo.core.workflow.MyWorkFlowProcess.xml,OSGI-INF/com.
+ sutrix.demo.core.workflow.MydemoWorkFlowStep.xml,OSGI-INF/com.sutrix.de
+ mo.core.workflow.TriggerWorkflowServlet.xml,OSGI-INF/com.sutrix.demo.co
+ re.workflow.particpant.DynamicParticipantStep.xml,OSGI-INF/com.sutrix.d
+ emo.core.workflow.particpant.DynamicParticipantStepTwo.xml,OSGI-INF/com
+ .sutrix.demo.core.workflow.processstep.ApprovedProcessStep.xml,OSGI-INF
+ /com.sutrix.demo.core.workflow.processstep.FirstProcessStep.xml,OSGI-IN
+ F/com.sutrix.demo.core.workflow.processstep.ProcessStep.xml,OSGI-INF/co
+ m.sutrix.demo.core.workflow.processstep.RejectedProcessStep.xml,OSGI-IN
+ F/com.sutrix.demo.core.workflow.processstep.SecondProcessStep.xml
 Sling-Model-Packages: com.sutrix.demo.core
 Tool: Bnd-3.3.0.201609221906

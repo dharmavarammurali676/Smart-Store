@@ -43,7 +43,8 @@ public class BookingServlet extends SlingAllMethodsServlet {
     EmailService emailService;
 
     @Override
-    protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(SlingHttpServletRequest request,
+                          SlingHttpServletResponse response) throws ServletException, IOException {
 
 
         try {
@@ -93,34 +94,35 @@ public class BookingServlet extends SlingAllMethodsServlet {
                 response.setContentType("text/html");
                 response.getWriter().write("Your Order is Placed with " + Email);
             } else {
-                Node parentNode = resource1.adaptTo(Node.class);
-                if (parentNode != null) {
-                    ////////// Child Node
-                    Node childnode = parentNode.addNode(String.valueOf(random), "nt:unstructured");
-                    ////////// Properties
-                    childnode.setProperty("Firstname", firstName);
-                    childnode.setProperty("Lastname", lastName);
-                    childnode.setProperty("Gender", Gender);
-                    childnode.setProperty("Email", Email);
-                    childnode.setProperty("PhoneNumber", phoneNumber);
-                    childnode.setProperty("Brand", Mobile);
-                    childnode.setProperty("Address", Address);
-                    childnode.setProperty("Postal Code", PostalCode);
-                    childnode.setProperty("Model", Model);
-                    childnode.setProperty("Payment Mode", Payment);
-                    childnode.setProperty("Ordered Date", String.valueOf(calendar.getTime()));
-                    resourceResolver.commit();
-                    response.setContentType("text/html");
-                    response.getWriter().write("Your Order is Placed with " + Email);
+
+                    Node parentNode = resource1.adaptTo(Node.class);
+                    if (parentNode != null) {
+                        ////////// Child Node
+                        Node childnode = parentNode.addNode(String.valueOf(random), "nt:unstructured");
+                        ////////// Properties
+                        childnode.setProperty("Firstname", firstName);
+                        childnode.setProperty("Lastname", lastName);
+                        childnode.setProperty("Gender", Gender);
+                        childnode.setProperty("Email", Email);
+                        childnode.setProperty("PhoneNumber", phoneNumber);
+                        childnode.setProperty("Brand", Mobile);
+                        childnode.setProperty("Address", Address);
+                        childnode.setProperty("Postal Code", PostalCode);
+                        childnode.setProperty("Model", Model);
+                        childnode.setProperty("Payment Mode", Payment);
+                        childnode.setProperty("Ordered Date", String.valueOf(calendar.getTime()));
+                        resourceResolver.commit();
+                        response.setContentType("text/html");
+                        response.getWriter().write("Your Order is Placed with " + Email);
+                    }
                 }
-            }
             /////.....Sending Email
 
             emailService.getEmail(Email,
                     new String[]{Constants.TO_EMAIL},
                     Constants.BOOKING_STATUS,
                     "<b style=\"color:green;\"> Free Delivery &#x1F4F1;" +
-                            "<u><img src=\"https://th.bing.com/th/id/OIP.DCCxDtEiOlDNdWn2G3I_6AAAAA?pid=ImgDet&rs=1\" " +
+                            "<u><img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTarKwYK-fY0N9PobdTy2fV18oTVa_INiG0TQ&usqp=CAU " +
                             "alt=\"Delivery\"></u><br/></b><b> We've just shipped your order!</b><br/><b>Dear Customer,</b> <br/><p> Congratulations <b>"
                             + firstName + lastName + "</b>, Your SmartPhone booking confirmed. <br/><p> Your Order ID :" + random +
                             " </p><br/>. This is just a quick update to let you know that your order is now in the mail and on it's way to you." +

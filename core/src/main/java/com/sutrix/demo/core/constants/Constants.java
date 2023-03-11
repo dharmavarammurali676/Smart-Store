@@ -42,7 +42,7 @@ public class Constants {
 
   public static final String OTP_SENDER_PATH = "/mydemo/send/otp";
 
-  public static final String SHOW_ORDER_PATH = "/smartphone/show/order";
+  public static final String SHOW_DELETE_ORDER_PATH = "/smartphone/show&delete/order";
 
   public static final String CREATE_NODE = "/bin/create/new/node";
   public static final String EQUAL = "=";

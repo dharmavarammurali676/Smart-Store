@@ -40,7 +40,6 @@ com\sutrix\demo\core\servlets\dropdown\DropDownServlet$1.class
 com\sutrix\demo\core\event\JCREventHandler.class
 com\sutrix\demo\core\workflow\DownloadAssetServlet.class
 com\sutrix\demo\core\systemuser\Developer.class
-com\sutrix\demo\core\servlets\order\ShowOrdersServlet.class
 com\sutrix\demo\core\models\buy\BuyImpl.class
 com\sutrix\demo\core\event\ResourceEventHandler.class
 com\sutrix\demo\core\schedulers\SimpleScheduledTask.class
@@ -94,4 +93,5 @@ com\sutrix\demo\core\services\impl\SendingEmailServiceImpl.class
 com\sutrix\demo\core\servlets\login\DeleteAccount.class
 com\sutrix\demo\core\workflow\TriggerWorkflowServlet.class
 com\sutrix\demo\core\models\CarouselModel.class
+com\sutrix\demo\core\servlets\order\ShowandDeleteOrdersServlet.class
 com\sutrix\demo\core\models\HelloWorldModel.class

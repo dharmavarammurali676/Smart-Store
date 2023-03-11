@@ -80,7 +80,7 @@ public class RegistrationServlet extends SlingAllMethodsServlet {
                 childnodes.setProperty("ContactNumber", regMobileNumber);
                 resourceResolver.commit();
                 response.setContentType("text/html");
-                response.getWriter().write("Smart_Store Wesite Accout is created with [" + regEmail + "]");
+                response.getWriter().write("Smart_Store Website Account is created with [" + regEmail + "]");
             } else {
                 response.getWriter().write("Accout already exist with this [" + regEmail + "]");
             }
