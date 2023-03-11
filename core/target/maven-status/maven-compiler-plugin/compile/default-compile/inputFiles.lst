@@ -1,90 +1,95 @@
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\navimage\NavImage.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\SampleServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\email\OTP.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\javapracties\RandomPassword.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\services\SendingEmailService.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\cf\ContentFragment.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\constants\Constants.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\dropdown\DropDownModelForEE.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\cf\ContentFragmentModel.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\services\impl\SendingEmailServiceImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\pageslink\PageImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\task\Task.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\login\RegistrationServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\SampleDropdownServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\email\SendOTP.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\files\HtmlGenerator.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\order\DeleteBookingServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\pageslink\Page.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\package-info.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\particpant\DynamicParticipantStepTwo.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\CustomWorkflow.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\order\BookingServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\Service.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\DropDownServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\emailservlet\ChatServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\emailservlet\HTMLEmailServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\features\FeaturesImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\CreateNodeServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\email\sendtoauthor\osgiforemail\CQMailServiceConfigurationImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\mobile\MobileImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\processstep\RejectedProcessStep.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\particpant\DynamicParticipantStep.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\processstep\ApprovedProcessStep.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\processstep\SecondProcessStep.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\CarouselModel.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\util\ResolverUtil.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\processstep\FirstProcessStep.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\buy\Buy.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\EmailSendToAuthors.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\emailservlet\SendingMailServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\JCREventHandler.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\filters\LoggingFilter.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\buy\BuyImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\SimpleServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\TriggerWorkflowServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\bean\Booking.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\listeners\SimpleResourceListener.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\email\sendtoauthor\EmailSendToAuthors.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\order\OTPServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\Multifield.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\javapracties\MapPractice.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\ReplicationEventListener.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\ContentSubTypeDropdownServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\DownloadAssetServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\services\EmailService.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\services\impl\EmailServiceImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\DropDownServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\MultifieldList.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\osgiforemail\CQMailConfig.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\Property.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\task\MyComponentModel.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\ResourceEventHandler.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\processstep\ProcessStep.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\bean\MenuItem.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\CustomersList.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\search\DeleteBookingServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\schedulers\SchedulerJobs.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\util\CommonUtils.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\osgiforemail\CQMailServiceConfigurationImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\login\DeleteAccount.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\javapracties\Window.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\mobile\Mobile.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\schedulers\SimpleScheduledTask.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\MydemoWorkFlowStep.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\SimpleDSComponent.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\workflow\MyWorkFlowProcess.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\systemuser\Developer.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\login\SignInServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\pojo\NavigationComponent.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\HelloWorldModel.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\navimage\NavImageImpl.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\dropdown\DropDownForEmployeeDetails.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\schedulers\Scheduler.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\models\features\Features.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\ContentTypeDropdownDSServlet.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\bean\SignupUser.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\files\XmlGenerator.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\event\OSGiEventHandler.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\dropdown\DropDownForAddEmail.java
-D:\Real Projects\mydemo\core\src\main\java\com\sutrix\demo\core\email\sendtoauthor\osgiforemail\CQMailConfig.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\SimpleDSComponent.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\javapracties\RandomPassword.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\TriggerWorkflowServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\features\FeaturesImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\SampleDropdownServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\EmailSendToAuthors.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\search\DeleteBookingServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\listeners\SimpleResourceListener.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\package-info.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\features\Features.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\pageslink\PageImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\processstep\SecondProcessStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\EmailService.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\bean\MenuItem.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\order\ShowOrdersServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\constants\Constants.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\processstep\ApprovedProcessStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\Multifield.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\ContentSubTypeDropdownServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\processstep\FirstProcessStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\filters\LoggingFilter.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\cf\ContentFragment.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\task\Task.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\DropDownServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\navimage\NavImageImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\pojo\NavigationComponent.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\config\CQMailConfig.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\SendingEmailService.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\MydemoWorkFlowStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\schedulers\SchedulerJobs.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\dropdown\ContentTypeDropdownDSServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\dropdown\DropDownForEmployeeDetails.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\dropdown\DropDownForAddEmail.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\osgiforemail\CQMailServiceConfigurationImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\navimage\NavImage.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\schedulers\Scheduler.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\processstep\ProcessStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\order\DeleteOrderServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\buy\Buy.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\login\DeleteAccount.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\CustomWorkflow.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\HelloWorldModel.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\JCREventHandler.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\ResourceEventHandler.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\login\SignInServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\cf\ContentFragmentModel.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\SmartStoreService.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\Service.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\Property.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\order\BookingServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\mobile\MobileImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\util\CommonUtils.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\particpant\DynamicParticipantStepTwo.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\pageslink\Page.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\CustomersList.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\order\DeleteBookingServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\systemuser\Developer.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\buy\BuyImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\order\OTPServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\DropDownServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\bean\Booking.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\OSGiEventHandler.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\mobile\Mobile.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\login\RegistrationServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\bean\SignupUser.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\Service.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\files\XmlGenerator.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\config\impl\CQMailServiceConfigurationImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\emailservlet\SendingMailServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\MyWorkFlowProcess.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\impl\SmartStoreServiceImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\DownloadAssetServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\emailservlet\ChatServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\javapracties\MapPractice.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\emailservlet\HTMLEmailServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\files\HtmlGenerator.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\MultifieldList.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\SimpleServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\CreateNodeServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\particpant\DynamicParticipantStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\util\ResolverUtil.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\SampleServlet.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\CarouselModel.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\config\WorkFlowConfiguration.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\task\MyComponentModel.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\processstep\RejectedProcessStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\osgiforemail\CQMailConfig.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\dropdown\DropDownModelForEE.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\impl\SendingEmailServiceImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\javapracties\Window.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\impl\EmailServiceImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\schedulers\SimpleScheduledTask.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\event\ReplicationEventListener.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\config\impl\WorkFlowConfigurationImpl.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\services\impl\ServiceImpl.java

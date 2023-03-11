@@ -9,6 +9,7 @@ import com.adobe.granite.workflow.exec.Workflow;
 import com.adobe.granite.workflow.metadata.MetaDataMap;
 import com.day.cq.mailer.MessageGateway;
 import com.day.cq.mailer.MessageGatewayService;
+import com.sutrix.demo.core.config.WorkFlowConfiguration;
 import com.sutrix.demo.core.constants.Constants;
 import com.sutrix.demo.core.services.EmailService;
 import org.apache.commons.mail.EmailException;
@@ -23,11 +24,15 @@ import java.util.List;
 /**
  * @author Dharmavaram Murali
  */
-@Component(service = ParticipantStepChooser.class, property = {"chooser.label=" + "Administrator"})
+@Component(service = ParticipantStepChooser.class, property =
+        {"chooser.label=" + Constants.WORKFLOW_FIRST_APPROVER})
 public class DynamicParticipantStep implements ParticipantStepChooser {
 
     @Reference
     EmailService emailService;
+
+    @Reference
+    WorkFlowConfiguration workFlowConfiguration;
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
@@ -37,7 +42,7 @@ public class DynamicParticipantStep implements ParticipantStepChooser {
 
         log.info("----------< [{}] >----------", this.getClass().getName());
 
-        String participant = "admin";
+        String participant = workFlowConfiguration.getFirstApprover();
 
         Workflow workflow = workItem.getWorkflow();
 
@@ -46,15 +51,15 @@ public class DynamicParticipantStep implements ParticipantStepChooser {
 
         if (!workflowHistory.isEmpty()) {
             // Setting the administrators group to the participant
-            participant = "administrators";
+            participant = workFlowConfiguration.getFirstApprover();
         } else {
-            participant = "admin";
+            participant = workFlowConfiguration.getFirstApprover();
         }
 
         emailService.getEmail(Constants.TO_EMAIL,
                 new String[]{Constants.CC_EMAIL},
                 " Requesting from requester",
-                "Hi " + participant + ",Please Check your Login There Waiting for Approval from requester &#x1F4C2;");
+                "Hi [" + participant + "], Please Check your Login There Waiting for Approval from requester &#x1F4C2;");
 
         log.info("----------< Participant: {} >----------", participant);
         return participant;

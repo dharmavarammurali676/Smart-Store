@@ -12,6 +12,9 @@ public class Constants {
 
   public static final String USER_NAME = "admin";
 
+  public static final String WORKFLOW_FIRST_APPROVER = "Administrator";
+  public static final String WORKFLOW_SECOND_APPROVER = "Dharmavaram Murali";
+
   public static final String PASSWORD = "admin";
 
   public static final String ACCOUNT_STATUS = "Account Status";

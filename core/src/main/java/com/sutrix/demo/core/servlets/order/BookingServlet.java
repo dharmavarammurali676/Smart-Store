@@ -69,26 +69,51 @@ public class BookingServlet extends SlingAllMethodsServlet {
             Calendar calendar = Calendar.getInstance();
 
             Node node = resource.adaptTo(Node.class);
-            ////////// Parent Node
-            Node parentnode = node.addNode(Email, "nt:unstructured");
-            ////////// Child Node
-            Node childnode = parentnode.addNode(String.valueOf(random), "nt:unstructured");
-            ////////// Properties
-            childnode.setProperty("Firstname", firstName);
-            childnode.setProperty("Lastname", lastName);
-            childnode.setProperty("Gender", Gender);
-            childnode.setProperty("Email", Email);
-            childnode.setProperty("PhoneNumber", phoneNumber);
-            childnode.setProperty("Brand", Mobile);
-            childnode.setProperty("Address", Address);
-            childnode.setProperty("Postal Code", PostalCode);
-            childnode.setProperty("Model", Model);
-            childnode.setProperty("Payment Mode", Payment);
-            childnode.setProperty("Ordered Date", String.valueOf(calendar.getTime()));
-            resourceResolver.commit();
-            response.setContentType("text/html");
-            response.getWriter().write(" Your Order is Successfully Booked ");
 
+            Resource resource1 = resourceResolver.getResource("/database/orders/bookings/" + Email);
+
+            if (resource1 == null) {
+                ////////// Parent Node
+                Node parentnode = node.addNode(Email, "nt:unstructured");
+                ////////// Child Node
+                Node childnode = parentnode.addNode(String.valueOf(random), "nt:unstructured");
+                ////////// Properties
+                childnode.setProperty("Firstname", firstName);
+                childnode.setProperty("Lastname", lastName);
+                childnode.setProperty("Gender", Gender);
+                childnode.setProperty("Email", Email);
+                childnode.setProperty("PhoneNumber", phoneNumber);
+                childnode.setProperty("Brand", Mobile);
+                childnode.setProperty("Address", Address);
+                childnode.setProperty("Postal Code", PostalCode);
+                childnode.setProperty("Model", Model);
+                childnode.setProperty("Payment Mode", Payment);
+                childnode.setProperty("Ordered Date", String.valueOf(calendar.getTime()));
+                resourceResolver.commit();
+                response.setContentType("text/html");
+                response.getWriter().write("Your Order is Placed with " + Email);
+            } else {
+                Node parentNode = resource1.adaptTo(Node.class);
+                if (parentNode != null) {
+                    ////////// Child Node
+                    Node childnode = parentNode.addNode(String.valueOf(random), "nt:unstructured");
+                    ////////// Properties
+                    childnode.setProperty("Firstname", firstName);
+                    childnode.setProperty("Lastname", lastName);
+                    childnode.setProperty("Gender", Gender);
+                    childnode.setProperty("Email", Email);
+                    childnode.setProperty("PhoneNumber", phoneNumber);
+                    childnode.setProperty("Brand", Mobile);
+                    childnode.setProperty("Address", Address);
+                    childnode.setProperty("Postal Code", PostalCode);
+                    childnode.setProperty("Model", Model);
+                    childnode.setProperty("Payment Mode", Payment);
+                    childnode.setProperty("Ordered Date", String.valueOf(calendar.getTime()));
+                    resourceResolver.commit();
+                    response.setContentType("text/html");
+                    response.getWriter().write("Your Order is Placed with " + Email);
+                }
+            }
             /////.....Sending Email
 
             emailService.getEmail(Email,

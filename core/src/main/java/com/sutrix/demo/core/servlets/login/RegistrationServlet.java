@@ -57,6 +57,7 @@ public class RegistrationServlet extends SlingAllMethodsServlet {
             ResourceResolver resourceResolver = request.getResourceResolver();
             Resource resource = resourceResolver.getResource("/database/signup_database/users");
             Log.info("Resource is at path {}", resource.getPath());
+
             response.setContentType("text/html");
             PrintWriter printWriter = response.getWriter();
 
@@ -66,18 +67,23 @@ public class RegistrationServlet extends SlingAllMethodsServlet {
             String regEmail = request.getParameter("email");
             String regMobileNumber = request.getParameter("mobileno");
 
-            ////////// Create New Node
-            Node node = resource.adaptTo(Node.class);
-            Node childnodes = node.addNode(regEmail, "nt:unstructured");
-            childnodes.setProperty("Username", regUserName);
-            childnodes.setProperty("Password", regPassword);
-            childnodes.setProperty("ConfirmPassword", regRepass);
-            childnodes.setProperty("Email", regEmail);
-            childnodes.setProperty("ContactNumber", regMobileNumber);
-            resourceResolver.commit();
+            Resource resource1 = resourceResolver.getResource("/database/signup_database/users/" + regEmail);
 
-            response.setContentType("text/html");
-            response.getWriter().write("New registration created successfully done !.......Can Try to login");
+            if (resource1 == null) {
+                ////////// Create New Node
+                Node node = resource.adaptTo(Node.class);
+                Node childnodes = node.addNode(regEmail, "nt:unstructured");
+                childnodes.setProperty("Username", regUserName);
+                childnodes.setProperty("Password", regPassword);
+                childnodes.setProperty("ConfirmPassword", regRepass);
+                childnodes.setProperty("Email", regEmail);
+                childnodes.setProperty("ContactNumber", regMobileNumber);
+                resourceResolver.commit();
+                response.setContentType("text/html");
+                response.getWriter().write("Smart_Store Wesite Accout is created with [" + regEmail + "]");
+            } else {
+                response.getWriter().write("Accout already exist with this [" + regEmail + "]");
+            }
 
             ///....Set the time for the email to be sent
             Calendar calendar = Calendar.getInstance();

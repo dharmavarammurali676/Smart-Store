@@ -42,25 +42,26 @@ public class ShowOrdersServlet extends SlingAllMethodsServlet {
     protected void doPost(SlingHttpServletRequest request,
                           SlingHttpServletResponse response) throws ServletException, IOException {
 
-        response.setContentType("application/json");
-        PrintWriter out = response.getWriter();
-        String Email = request.getParameter("email");
-        ResourceResolver resourceResolver = request.getResourceResolver();
-        Resource resource = resourceResolver.getResource("/database/orders/bookings");
-        if (resource != null) {
-            Resource childResource = resource.getChild(Email);
-            if (childResource != null) {
-                Node child = childResource.adaptTo(Node.class);
-                emailService.getEmail(Constants.TO_EMAIL,
-                        new String[]{Constants.CC_EMAIL},
-                        "ID",
-                        "Your Order ID : " + child);
-                response.getWriter().write("Your Orders ID's sent your registered Email");
-            } else {
-                response.getWriter().write("Order is does not exist");
+            response.setContentType("application/json");
+            PrintWriter out = response.getWriter();
+            String Email = request.getParameter("email");
+            ResourceResolver resourceResolver = request.getResourceResolver();
+            Resource resource = resourceResolver.getResource("/database/orders/bookings");
+            if (resource != null) {
+                Resource childResource = resource.getChild(Email);
+                if (childResource != null) {
+                    Node child = childResource.adaptTo(Node.class);
+                    emailService.getEmail(Constants.TO_EMAIL,
+                            new String[]{Constants.CC_EMAIL},
+                            "Order ID",
+                            "Your Order ID : " + child);
+                    response.getWriter().write("Your Orders ID's sent your registered Email");
+                } else {
+                    response.getWriter().write("Order is does not exist");
+                }
             }
-        }
-    }
-}
+
+    }}
+
 
 

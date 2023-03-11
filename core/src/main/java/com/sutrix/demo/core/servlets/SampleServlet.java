@@ -16,7 +16,7 @@ import java.io.IOException;
                     {Servlet.class
                              }, property = {
         "sling.servlet.methods=get",
-        "sling.servlet.paths=/bin/sample/class"
+        "sling.servlet.paths=/bin/mydemo/hello"
 })
 public class SampleServlet extends SlingAllMethodsServlet {
 
