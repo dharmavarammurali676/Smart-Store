@@ -35,6 +35,7 @@ D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\osgiforemail\CQM
 D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\navimage\NavImage.java
 D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\schedulers\Scheduler.java
 D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\processstep\ProcessStep.java
+D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\order\DeleteOrderServlet.java
 D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\models\buy\Buy.java
 D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\servlets\login\DeleteAccount.java
 D:\Projects\Smart-Store\core\src\main\java\com\sutrix\demo\core\workflow\CustomWorkflow.java
